@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>my-responsive-webapp</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>Responsive-WebApp-Demo</name>
+
+    <!-- Java 11 ... change if needed -->
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Nexus repository names -->
+        <releases.repo>maven-releases</releases.repo>
+        <snapshots.repo>maven-snapshots</snapshots.repo>
+    </properties>
+
+    <dependencies>
+        <!-- Minimal servlet API -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>5.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JUnit 5 for tests -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Compile / package -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+
+            <!-- Tomcat deploy/undeploy from Maven (makes Jenkins life easy) -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://${tomcat.host}:8080/manager/text</url>
+                    <server>tomcat-server</server>
+                    <path>/responsive-demo</path>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire for unit tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Where Maven should PUSH when we run mvn deploy -->
+    <distributionManagement>
+        <repository>
+            <id>${releases.repo}</id>
+            <name>Nexus Releases</name>
+            <url>http://nexus.local:8081/repository/${releases.repo}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${snapshots.repo}</id>
+            <name>Nexus Snapshots</name>
+            <url>http://nexus.local:8081/repository/${snapshots.repo}</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
