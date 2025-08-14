@@ -184,19 +184,3 @@ http://<TOMCAT_IP>:8080/my-responsive-webapp-1.0.0-SNAPSHOT
 
 This project is licensed under the MIT License.
 ```
-
----
-
-## 🖼️ Recommended Images to Add
-
-Place these images in a folder called `images/` inside your repo:
-
-| Image File | Description |
-|------------|-------------|
-| `pipeline-overview.png` | A diagram showing Jenkins stages (Clone → Build → Deploy → Monitor) |
-| `jenkins-console-output.png` | Screenshot of Jenkins console output showing monitoring results |
-| `webapp-screenshot.png` | Screenshot of your deployed Java web app in the browser |
-
----
-
-Would you like me to generate a sample pipeline diagram or help you capture the screenshots?
