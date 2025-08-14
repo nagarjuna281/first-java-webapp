@@ -144,9 +144,8 @@ View results in Jenkins:
 - Click the latest build
 - Click **Console Output**
 - Look for monitoring results in the **Run AI Monitor** stage
-
-<img width="1187" height="685" alt="Screenshot 2025-08-14 112233" src="https://github.com/user-attachments/assets/71846515-183c-4d52-9ab4-c3a26c038459" />
-
+  
+<img width="1182" height="587" alt="Screenshot 2025-08-14 112054" src="https://github.com/user-attachments/assets/e5c5948f-2f1e-47c7-a5a3-ec93da456f60" />
 
 ---
 
