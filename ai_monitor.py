@@ -1,6 +1,6 @@
 import requests
 
-APP_URL = "http:/http://54.167.80.96/:8080/my-responsive-webapp-1.0.0-SNAPSHOT"
+APP_URL = "http://54.167.80.96:8080/my-responsive-webapp-1.0.0-SNAPSHOT"
 
 try:
     response = requests.get(APP_URL, timeout=5)
