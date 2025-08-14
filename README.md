@@ -156,8 +156,6 @@ View results in Jenkins:
 
 <img width="1182" height="587" alt="image" src="https://github.com/user-attachments/assets/123d8fbd-68fb-4258-9eea-a1bdd75f59bf" />
 
-*Example of Jenkins console showing monitoring results*
-
 ---
 
 ## ✅ Final Verification
@@ -168,8 +166,8 @@ Visit your deployed app:
 http://<TOMCAT_IP>:8080/my-responsive-webapp-1.0.0-SNAPSHOT
 ```
 
-![Web App Screenshot](images/webapp-screenshot.png)
-*Screenshot of the deployed Java web app in browser*
+<img width="1187" height="685" alt="image" src="https://github.com/user-attachments/assets/89fb0dfb-a7b7-4a17-9944-e078c332144d" />
+
 
 ---
 
