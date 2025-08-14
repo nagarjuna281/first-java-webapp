@@ -12,8 +12,6 @@ This project demonstrates a complete CI/CD pipeline for a Java web application u
 - GitHub (Source control)
 - Python (Post-deployment monitoring)
 
-"Automated deployment pipeline: GitHub → Jenkins → EC2. Code changes trigger builds, tests, and deployment to a live server—all in one streamlined flow."
-
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
