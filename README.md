@@ -1,10 +1,3 @@
-Absolutely! Here's a **copy-paste-ready `README.md`** file for your GitHub repo, complete with markdown formatting, headings, and placeholders for images. I’ll also tell you exactly **which images to add** and **where to place them** to make your README visually engaging and informative.
-
----
-
-## ✅ Copy-Paste `README.md`
-
-```markdown
 # 🚀 Java Web App CI/CD Pipeline with Jenkins & Tomcat
 
 This project demonstrates a complete CI/CD pipeline for a Java web application using Jenkins, Maven, and Apache Tomcat. It includes automated build, deployment, and post-deployment monitoring using a Python script.
