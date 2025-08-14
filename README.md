@@ -12,15 +12,6 @@ This project demonstrates a complete CI/CD pipeline for a Java web application u
 - GitHub (Source control)
 - Python (Post-deployment monitoring)
 
----
-
-## 📸 Project Overview
-
-![Pipeline Overview](images/pipeline-overview.png)
-*Diagram showing Jenkins stages: Clone → Build → Deploy → Monitor*
-
----
-
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
