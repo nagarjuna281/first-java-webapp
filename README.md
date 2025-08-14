@@ -166,7 +166,8 @@ Visit your deployed app:
 http://<TOMCAT_IP>:8080/my-responsive-webapp-1.0.0-SNAPSHOT
 ```
 
-<img width="1187" height="685" alt="image" src="https://github.com/user-attachments/assets/89fb0dfb-a7b7-4a17-9944-e078c332144d" />
+<img width="1187" height="685" alt="Screenshot 2025-08-14 112233" src="https://github.com/user-attachments/assets/bdbcecc9-b31b-44f4-976d-74b992c9343f" />
+
 
 
 ---
