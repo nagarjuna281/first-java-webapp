@@ -154,7 +154,8 @@ View results in Jenkins:
 - Click **Console Output**
 - Look for monitoring results in the **Run AI Monitor** stage
 
-![Console Output](images/jenkins-console-output.png)
+<img width="1182" height="587" alt="image" src="https://github.com/user-attachments/assets/123d8fbd-68fb-4258-9eea-a1bdd75f59bf" />
+
 *Example of Jenkins console showing monitoring results*
 
 ---
