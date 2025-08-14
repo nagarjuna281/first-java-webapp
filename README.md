@@ -151,7 +151,7 @@ View results in Jenkins:
 
 ## ✅ Final Verification
 
-Visit your deployed app:
+Deployed app:
 
 ```
 http://<TOMCAT_IP>:8080/my-responsive-webapp-1.0.0-SNAPSHOT
