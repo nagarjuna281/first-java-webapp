@@ -33,16 +33,6 @@ Source code is hosted on GitHub:
 ---
 
 ### 2. Jenkins Setup (EC2 #1)
-```bash
-sudo apt update
-sudo apt install openjdk-11-jdk -y
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-sudo apt update
-sudo apt install jenkins -y
-sudo systemctl start jenkins
-```
-
 - Access Jenkins at `http://<JENKINS_EC2_IP>:8080`
 - Install required plugins:
   - Git
@@ -58,29 +48,8 @@ sudo systemctl start jenkins
 ---
 
 ### 3. Tomcat Setup (EC2 #2)
-```bash
-# Download and extract Tomcat
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.108/bin/apache-tomcat-9.0.108.tar.gz
-tar -xvzf apache-tomcat-9.0.108.tar.gz
-cd apache-tomcat-9.0.108
-```
 
 #### 🔐 Configure Remote Deployment Access
-```bash
-# Modify tomcat-users.xml
-sed -i '56d' conf/tomcat-users.xml
-sed -i '56 a\<role rolename="manager-gui"/>' conf/tomcat-users.xml
-sed -i '57 a\<role rolename="manager-script"/>' conf/tomcat-users.xml
-sed -i '58 a\<user username="tomcat" password="admin@123" roles="manager-gui,manager-script"/>' conf/tomcat-users.xml
-sed -i '59 a\</tomcat-users>' conf/tomcat-users.xml
-
-# Remove IP restrictions from manager app
-sed -i '21d' webapps/manager/META-INF/context.xml
-sed -i '22d' webapps/manager/META-INF/context.xml
-
-# Start Tomcat
-sh bin/startup.sh
-```
 
 - Access Tomcat at `http://<TOMCAT_EC2_IP>:8080`
 
@@ -124,14 +93,13 @@ pipeline {
     }
 }
 ```
-
 ---
 
 ## 🛠️ Creating the Jenkins Pipeline Job
 
 1. Open Jenkins dashboard.
 2. Click **New Item**.
-3. Enter a name (e.g., `Java-Webapp-Pipeline`) and select **Pipeline**, then click **OK**.
+3. Enter a name (e.g., `first-java-webapp`) and select **Pipeline**, then click **OK**.
 4. Scroll down to the **Pipeline** section.
 5. Choose **Pipeline script** and paste the Jenkinsfile code above.
 6. Click **Save**.
@@ -151,14 +119,8 @@ pipeline {
 
 Once deployed, your app will be available at:  
 **http://<TOMCAT_EC2_IP>:8080/myapp**
+<img width="1366" height="648" alt="Untitled" src="https://github.com/user-attachments/assets/f80791be-f8a1-495e-bcc1-3804da98ee59" />
 
----
-
-## 📄 Notes
-
-- Ensure both EC2 instances have proper security group rules.
-- Use Elastic IPs for consistent access.
-- This setup is ideal for learning CI/CD fundamentals with Java web apps.
 
 ```
 
