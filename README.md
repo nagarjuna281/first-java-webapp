@@ -2,6 +2,9 @@
 
 This project demonstrates how to deploy a simple Java web application using Jenkins and Apache Tomcat, hosted on two separate EC2 instances. The CI/CD pipeline automates code retrieval, build, and deployment using Maven and Jenkins.
 
+<img width="886" height="240" alt="Screenshot 2025-08-17 152524" src="https://github.com/user-attachments/assets/b6871289-76a8-40b4-9b5a-d9f40faec068" />
+
+
 ---
 
 ## 🧱 Infrastructure Overview
