@@ -122,8 +122,3 @@ Once deployed, your app will be available at:
 <img width="1366" height="648" alt="Untitled" src="https://github.com/user-attachments/assets/f80791be-f8a1-495e-bcc1-3804da98ee59" />
 
 
-```
-
----
-
-Would you like me to help you add a diagram, Dockerize the setup, or convert this into a Terraform deployment guide?
