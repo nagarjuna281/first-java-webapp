@@ -8,7 +8,7 @@
 </head>
 <body class="p-5">
     <h1 class="display-4">🔥 CI/CD Playground 🔥</h1>
-    <p class="lead">Maven → Nexus → Tomcat → AI via Jenkins Pipeline</p>
+    <p class="lead">Maven → Nexus → Tomcat via Jenkins Pipeline</p>
     <a class="btn btn-success btn-lg" href="hello">Say Hello</a>
 </body>
 </html>
