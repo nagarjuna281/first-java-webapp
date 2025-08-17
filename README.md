@@ -119,6 +119,7 @@ pipeline {
 
 Once deployed, your app will be available at:  
 **http://<TOMCAT_EC2_IP>:8080/myapp**
+
 <img width="1366" height="648" alt="Untitled" src="https://github.com/user-attachments/assets/f80791be-f8a1-495e-bcc1-3804da98ee59" />
 
 
