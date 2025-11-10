@@ -46,7 +46,7 @@ Source code is hosted on GitHub:
 - Add Jenkins credentials:
   - ID: `tomcat`
   - Username: `tomcat`
-  - Password: `admin@123`
+  - Password: `********`
 
 ---
 
